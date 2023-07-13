@@ -52,12 +52,12 @@ torchrun --nproc_per_node=4 train.py --config configs/bob.json
 
 The results will be stored in the `out` folder.
 
-The [Elephant](https://3d.si.edu/object/3d/spouted-vessel-he-form-elephant-masks-taotie-dragons-and-snakes:d8c63598-4ebc-11ea-b77f-2e728ce88125) and
-The [Baluster_vase](https://3d.si.edu/object/3d/baluster-vase-one-three-five-piece-garniture-f1980190-194:d8c62634-4ebc-11ea-b77f-2e728ce88125) and
-The [Beaker-shaped vase](https://3d.si.edu/object/3d/beaker-vase-one-five-piece-garniture:446bedc0-76f1-4eb9-a30e-355be14e9e30) and
-The [Incense](https://3d.si.edu/object/3d/lidded-incense-burner-xianglu-geometric-decoration-and-narrative-scenes:ce850625-2cf1-4c6f-9086-0d5845d9a664) and
-The [Kylix](https://3d.si.edu/object/3d/kylix:547c78d1-620b-40c4-982e-01928870fef4) and
-The [Pottery](https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc:79da3e3f-3ad7-41de-8956-e891d88a3c5f) and
+The [Elephant](https://3d.si.edu/object/3d/spouted-vessel-he-form-elephant-masks-taotie-dragons-and-snakes:d8c63598-4ebc-11ea-b77f-2e728ce88125) ,
+The [Baluster_vase](https://3d.si.edu/object/3d/baluster-vase-one-three-five-piece-garniture-f1980190-194:d8c62634-4ebc-11ea-b77f-2e728ce88125) ,
+The [Beaker-shaped vase](https://3d.si.edu/object/3d/beaker-vase-one-five-piece-garniture:446bedc0-76f1-4eb9-a30e-355be14e9e30) ,
+The [Incense](https://3d.si.edu/object/3d/lidded-incense-burner-xianglu-geometric-decoration-and-narrative-scenes:ce850625-2cf1-4c6f-9086-0d5845d9a664) ,
+The [Kylix](https://3d.si.edu/object/3d/kylix:547c78d1-620b-40c4-982e-01928870fef4) ,
+The [Pottery](https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc:79da3e3f-3ad7-41de-8956-e891d88a3c5f) ,
 The [Stoneware](https://3d.si.edu/object/3d/stoneware-jug-created-thomas-commeraw:82adf5d6-5ec4-46cc-9e68-6a4d7c5ea824) and
 The [Wine_container](https://3d.si.edu/object/3d/ritual-wine-container-fangyi-maskstaotie-serpents-and-birds:d8c62f94-4ebc-11ea-b77f-2e728ce88125)
 models were created and released into the public domain (https://3d.si.edu).
