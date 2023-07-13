@@ -1,0 +1,7 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl material_0
+bsdf pbr
+Ks 0.00 0.00 0.00
+map_Kd f1980_191-full_resolution-obj.png

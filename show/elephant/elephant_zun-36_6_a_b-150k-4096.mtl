@@ -1,0 +1,4 @@
+newmtl ml
+bsdf pbr
+Ks 0.00 0.00 0.00
+map_Kd elephant_zun-36_6_a_b-150k-4096-diffuse.jpg

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stoneware</title>
+    </head>
+    <body>
+    </body>
+    <script src="/threejs/three.js"></script>
+	<script src="/threejs/OrbitControls.js"></script>
+    <script src="/threejs/OBJLoader.js"></script>
+    <script src="/threejs/MTLLoader.js"></script>
+
+    <script>
+        //场景
+        var scene = new THREE.Scene();
+        //相机
+        var camera = new THREE.PerspectiveCamera(15, window.innerWidth / window.innerHeight, 0.1, 1000);
+        //设置相机坐标
+        camera.position.set(30, 50, 100);
+        //渲染器
+        var renderer = new THREE.WebGLRenderer();
+        //设置渲染器的颜色和大小
+        renderer.setClearColor(0x404040);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        //将renderer（渲染器）的dom元素（renderer.domElement）添加到我们的HTML文档中。
+        //这就是渲染器用来显示场景给我们看的<canvas>元素
+        document.body.appendChild(renderer.domElement);
+        //鼠标控制旋转
+        var controls = new THREE.OrbitControls(camera, renderer.domElement);
+        //设置是否可以缩放,默认值为true
+        // controls.enableZoom = false;
+        //设置鼠标交互,设置为false之后，不能移动位置，不能旋转物体,默认为true
+        // controls.enableRotate = false;
+        //var light = new THREE.DirectionalLight(0xffffff);//光源颜色
+        var light = new THREE.AmbientLight(0xffffff);    
+        light.position.set(0, 0, 150);//光源位置     
+        scene.add(light);//光源添加到场景中     
+        //添加灰色网格线
+        //scene.add(new THREE.GridHelper(20, 20));
+        //添加坐标轴
+        //scene.add(new THREE.AxesHelper(20));       
+        //导入obj模型
+        var objLoader = new THREE.OBJLoader();
+        objLoader.load('/show/stoneware/2011_61-StonewareJug-150k.obj', function (object) {
+                
+        object.traverse(function(child) {
+            if (child instanceof THREE.Mesh) {
+                //设置模型皮肤
+                child.material.map = THREE.ImageUtils.loadTexture('/show/stoneware/2011_61-StonewareJug-150k-4096-diffuse.jpg');
+            }
+        });
+    
+        //设置模型缩放比例
+        object.scale.set(45,45,45);
+        //设置模型的坐标
+        object.position.set(0, 0, 0);        
+        object.rotation.y = -Math.PI * 0.5;
+
+        //将模型添加到场景中
+        scene.add(object);
+    });
+
+        function render() {
+            //动画循环渲染
+            requestAnimationFrame(render);
+            //渲染到页面上
+            renderer.render(scene, camera);
+        }
+        render();
+    </script>
+</html>

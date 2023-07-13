@@ -1,0 +1,4 @@
+newmtl m1 
+bsdf pbr
+Ks 0.00 0.10 0.00
+map_Kd incense-burner-in-the-form-of-a-mountain-(boshanlu)-master-texture.png 

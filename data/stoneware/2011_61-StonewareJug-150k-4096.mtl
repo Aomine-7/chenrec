@@ -1,0 +1,4 @@
+newmtl ml
+bsdf pbr
+Ks 0.00 0.00 0.00
+map_Kd 2011_61-StonewareJug-150k-4096-diffuse.jpg

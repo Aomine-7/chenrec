@@ -1,0 +1,15 @@
+{
+    "ref_mesh": "data/pottery/2017_108_1_1-ColonoPottery-150k.obj",
+    "random_textures": true,
+    "iter": 1000,
+    "save_interval": 100,
+    "texture_res": [ 4096 , 4096 ],
+    "train_res": [512, 512],
+    "batch": 4,
+    "learning_rate": [0.03, 0.003],
+    "ks_min" : [0.0, 0.0, 0.0],
+    "envmap": "data/irrmaps/aerodynamics_workshop_2k.hdr",
+    "background": "white",
+    "validate" : false,
+    "out_dir": "pottery"
+}
